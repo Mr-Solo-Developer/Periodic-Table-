@@ -1,0 +1,188 @@
+/* Add some basic styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+td {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+td:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.atomicNumber {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.elementShotcut {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.elementName {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.atomicMass {
+  font-size: 0.7rem;
+  color: #777;
+}
+
+/* First table styles */
+.First-Table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Second table styles */
+.Second-Table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.second-Table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+/* Add animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+td:hover {
+  animation: glow 0.5s ease-in-out infinite;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  td {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .elementShotcut {
+    font-size: 1rem;
+  }
+
+  .elementName {
+    font-size: 0.7rem;
+  }
+
+  .atomicMass {
+    font-size: 0.6rem;
+  }
+}
+
+.hidden-cell {
+  visibility: hidden;
+  border: 0px solid black;
+}
+
+/* Group colors */
+.group-alkali {
+  background-color: #ff6666; /* Red for alkali metals */
+}
+
+.group-alkali:hover {
+  background-color: #ff4d4d;
+}
+
+.group-alkaline-earth {
+  background-color: #ffcc66; /* Orange for alkaline earth metals */
+}
+
+.group-alkaline-earth:hover {
+  background-color: #ffb84d;
+}
+
+.group-transition {
+  background-color: #ffccff; /* Pink for transition metals */
+}
+
+.group-transition:hover {
+  background-color: #ffb3ff;
+}
+
+.group-metalloid {
+  background-color: #ccccff; /* Light blue for metalloids */
+}
+
+.group-metalloid:hover {
+  background-color: #b3b3ff;
+}
+
+.group-nonmetal {
+  background-color: #66ff66; /* Green for nonmetals */
+}
+
+.group-nonmetal:hover {
+  background-color: #4dff4d;
+}
+
+.group-halogen {
+  background-color: #ffff66; /* Yellow for halogens */
+}
+
+.group-halogen:hover {
+  background-color: #ffff4d;
+}
+
+.group-noble-gas {
+  background-color: #66ffff; /* Cyan for noble gases */
+}
+
+.group-noble-gas:hover {
+  background-color: #4dffff;
+}
+
+.group-lanthanide {
+  background-color: #ff99cc; /* Light pink for lanthanides */
+}
+
+.group-lanthanide:hover {
+  background-color: #ff80b3;
+}
+
+.group-actinide {
+  background-color: #ffcc99; /* Light orange for actinides */
+}
+
+.group-actinide:hover {
+  background-color: #ffb380;
+}
