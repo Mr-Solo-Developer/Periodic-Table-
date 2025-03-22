@@ -186,3 +186,7 @@ td:hover {
 .group-actinide:hover {
   background-color: #ffb380;
 }
+
+::selection{
+background-color:red;
+  color:green;}
